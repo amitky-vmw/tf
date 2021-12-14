@@ -1,5 +1,5 @@
 provider "aws" {
-region="us-east-1"
+region="ap-southeast-1"
 }
 variable "instance_type" {
 description = "AWS instance type"
@@ -14,7 +14,7 @@ default = "terraform-test"
 resource "aws_instance" "machine1" {
 ami = "ami-49487a35"
 instance_type = "t2.micro"
-availability_zone = "ap-southeast-1"
+availability_zone = "ap-southeast-1a"
 tags = {
 "type" = var.myTag
 }
