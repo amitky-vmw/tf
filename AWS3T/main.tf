@@ -600,7 +600,7 @@ resource "aws_cloudformation_stack" "ThreeTier" {
 	"LinuxAPPInstance1": {
             "Type": "AWS::EC2::Instance",
             "Properties": {
-                "ImageId": "aami-49487a35",
+                "ImageId": "ami-49487a35",
 				"InstanceType": "t3.large",
 				"SubnetId": {
                     "Ref": "BMXPrivateSub1"
@@ -640,7 +640,7 @@ resource "aws_cloudformation_stack" "ThreeTier" {
 	"LinuxAPPInstance2": {
             "Type": "AWS::EC2::Instance",
             "Properties": {
-                "ImageId": "ami-0a669382ea0feb73a",
+                "ImageId": "ami-49487a35",
 				"InstanceType": "t3.large",
 				"SubnetId": {
                     "Ref": "BMXPrivateSub2"
