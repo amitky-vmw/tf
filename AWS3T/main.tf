@@ -251,7 +251,7 @@ resource "aws_cloudformation_stack" "ThreeTier" {
           {
             "DeviceName": "/dev/xvda",
             "Ebs": {
-              "SnapshotId": "snap-05997e363375c4011",
+              "SnapshotId": "snap-01027cc89a4d7774b",
               "VolumeSize": 8
             }
           }
