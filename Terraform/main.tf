@@ -16,6 +16,6 @@ ami = "ami-49487a35"
 instance_type = "t2.micro"
 availability_zone = "ap-southeast-1a"
 tags = {
-"type" = var.myTag
+"Name" = var.myTag
 }
 }
