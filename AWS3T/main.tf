@@ -26,7 +26,7 @@ resource "aws_cloudformation_stack" "ThreeTier" {
       "Type": "AWS::EC2::Subnet",
       "Properties": {
         "CidrBlock": "152.145.1.0/24",
-        "AvailabilityZone": "ap-southeast-1",
+        "AvailabilityZone": "ap-southeast-1a",
         "VpcId": {
           "Ref": "BMXDemoVPC"
         },
@@ -42,7 +42,7 @@ resource "aws_cloudformation_stack" "ThreeTier" {
       "Type": "AWS::EC2::Subnet",
       "Properties": {
         "CidrBlock": "152.145.2.0/24",
-        "AvailabilityZone": "ap-southeast-1",
+        "AvailabilityZone": "ap-southeast-1b",
         "VpcId": {
           "Ref": "BMXDemoVPC"
         },
@@ -58,7 +58,7 @@ resource "aws_cloudformation_stack" "ThreeTier" {
       "Type": "AWS::EC2::Subnet",
       "Properties": {
         "CidrBlock": "152.145.4.0/24",
-        "AvailabilityZone": "ap-southeast-1",
+        "AvailabilityZone": "ap-southeast-1b",
         "VpcId": {
           "Ref": "BMXDemoVPC"
         },
@@ -74,7 +74,7 @@ resource "aws_cloudformation_stack" "ThreeTier" {
       "Type": "AWS::EC2::Subnet",
       "Properties": {
         "CidrBlock": "152.145.11.0/24",
-        "AvailabilityZone": "ap-southeast-1",
+        "AvailabilityZone": "ap-southeast-1a",
         "VpcId": {
           "Ref": "BMXDemoVPC"
         },
@@ -90,7 +90,7 @@ resource "aws_cloudformation_stack" "ThreeTier" {
       "Type": "AWS::EC2::Subnet",
       "Properties": {
         "CidrBlock": "152.145.3.0/24",
-        "AvailabilityZone": "ap-southeast-1",
+        "AvailabilityZone": "ap-southeast-1b",
         "VpcId": {
           "Ref": "BMXDemoVPC"
         },
