@@ -1,7 +1,7 @@
 provider "aws" {
 region="ap-southeast-1"
-aws_key = var.aws_key
-aws_sec = var.aws_sec
+AWS_ACCESS_KEY_ID = var.aws_key
+AWS_SECRET_ACCESS_KEY = var.aws_sec
 }
 
 variable "aws_key" {
