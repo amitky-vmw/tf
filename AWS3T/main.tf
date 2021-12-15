@@ -42,7 +42,7 @@ resource "aws_cloudformation_stack" "ThreeTier" {
       "Type": "AWS::EC2::Subnet",
       "Properties": {
         "CidrBlock": "152.145.2.0/24",
-        "AvailabilityZone": "ap-southeast-1b",
+        "AvailabilityZone": "ap-southeast-1a",
         "VpcId": {
           "Ref": "BMXDemoVPC"
         },
