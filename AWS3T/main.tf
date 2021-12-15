@@ -239,7 +239,7 @@ resource "aws_cloudformation_stack" "ThreeTier" {
     "lcBMXDemoLC": {
       "Type": "AWS::AutoScaling::LaunchConfiguration",
       "Properties": {
-        "ImageId": "ami-0b8fed2ae8510edd1",
+        "ImageId": "ami-49487a35",
         "InstanceType": "t3.large",
         "KeyName": "Amit-Linux",
 		"AssociatePublicIpAddress" : "true",
@@ -601,7 +601,7 @@ resource "aws_cloudformation_stack" "ThreeTier" {
 	"LinuxAPPInstance1": {
             "Type": "AWS::EC2::Instance",
             "Properties": {
-                "ImageId": "ami-0a669382ea0feb73a",
+                "ImageId": "aami-49487a35",
 				"InstanceType": "t3.large",
 				"KeyName": "Amit-Linux",
 				"SubnetId": {
@@ -623,7 +623,7 @@ resource "aws_cloudformation_stack" "ThreeTier" {
 	"BastionHost": {
             "Type": "AWS::EC2::Instance",
             "Properties": {
-                "ImageId": "ami-0a669382ea0feb73a",
+                "ImageId": "ami-49487a35",
 				"InstanceType": "t3.large",
 				"KeyName": "Amit-Linux",
 				"NetworkInterfaces": [ {
