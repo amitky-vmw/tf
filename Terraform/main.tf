@@ -1,17 +1,6 @@
 provider "aws" {
 region="ap-southeast-1"
-access_key = var.aws_key
-secret_key = var.aws_sec
 }
-
-variable "aws_key" {
-  description = "AWS Key"
-}
- 
-variable "aws_sec" {
-  description = "AWS Sec"
-}
-
 variable "instance_type" {
 description = "AWS instance type"
 default = "t2.micro"
