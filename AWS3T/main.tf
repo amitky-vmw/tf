@@ -241,7 +241,7 @@ resource "aws_cloudformation_stack" "ThreeTier" {
       "Properties": {
         "ImageId": "ami-49487a35",
         "InstanceType": "t3.large",
-        "KeyName": "Amit-Linux",
+        #"KeyName": "Amit-Linux",
 		"AssociatePublicIpAddress" : "true",
         "SecurityGroups": [
           {
@@ -603,7 +603,7 @@ resource "aws_cloudformation_stack" "ThreeTier" {
             "Properties": {
                 "ImageId": "aami-49487a35",
 				"InstanceType": "t3.large",
-				"KeyName": "Amit-Linux",
+				#"KeyName": "Amit-Linux",
 				"SubnetId": {
                     "Ref": "BMXPrivateSub1"
                 },  
@@ -625,7 +625,7 @@ resource "aws_cloudformation_stack" "ThreeTier" {
             "Properties": {
                 "ImageId": "ami-49487a35",
 				"InstanceType": "t3.large",
-				"KeyName": "Amit-Linux",
+				#"KeyName": "Amit-Linux",
 				"NetworkInterfaces": [ {
 					"AssociatePublicIpAddress": "true",
 					"DeviceIndex": "0",
@@ -645,7 +645,7 @@ resource "aws_cloudformation_stack" "ThreeTier" {
             "Properties": {
                 "ImageId": "ami-0a669382ea0feb73a",
 				"InstanceType": "t3.large",
-				"KeyName": "Amit-Linux",
+				#"KeyName": "Amit-Linux",
 				"SubnetId": {
                     "Ref": "BMXPrivateSub2"
                 },
