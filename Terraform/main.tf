@@ -19,3 +19,12 @@ tags = {
 "Name" = var.myTag
 }
 }
+
+resource "aws_instance" "machine2" {
+ami = "ami-49487a35"
+instance_type = "t2.micro"
+availability_zone = "ap-southeast-1a"
+tags = {
+"Name" = var.myTag
+}
+}
