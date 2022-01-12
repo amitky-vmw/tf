@@ -1,16 +1,6 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 3.26.0"
-    }
-  }
-}
-
 # Define region and AWS profile
 provider "aws" {
   region  = "ap-southeast-1"
-  profile = "default"                     #Use VS code and create a profile using AWS acces key and secret key
 }
 
 # VPC Resource
