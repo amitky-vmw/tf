@@ -355,7 +355,7 @@ resource "aws_db_subnet_group" "database_subnet" {
   }
 }
 
-# [AK] DB - Defining RDS Instance
+# [AK] DB - Defining RDS Instances
 resource "aws_db_instance" "db_postgres" {
   allocated_storage       = 256 # gigabytes
   backup_retention_period = 7   # in days
